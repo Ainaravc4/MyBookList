@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr,td, th {
+            border: black 1px solid;
+            text-align: center;
+        }
+       
+    </style>
+    
+</head>
+
+<body style="background-color: gainsboro; ">
+    <img src="yo2.png " style="width: 8%; margin-left: 45%;">
+
+    <center>
+    <table style="width: 50%; ">
+    <tr><th>Datos</th><th>Borrar</th><th>Editar</th></tr>    
+    <tr style="text-align: center;vertical-align:text-top;">
+        <td style="width: 30%;">
+        <p>
+            <label for="titulo">Titulo</label>
+            <input id="titulo" type="text" name="titulo"/>
+            
+        </p>
+        <p>
+            <label for="genero">Genero</label>
+            <input id="genero" type="text" name="genero"/>
+            
+        </p>
+        <p>
+            <label for="autor">Autor</label>
+            <input id="autor" type="text" name="autor"/>
+            
+        </p>
+        
+        <button id="subir" style="background-color: black;color: white;">Subir Libro</button>
+
+    </td>
+    <td  style="width: 30%;">
+
+        <p id="leidos">
+            Nº Libros leidos: 0                
+        </p>
+    
+        <p id="noLeidos">
+            Nº Libros sin leer: 0    
+        </p>
+    
+        <p id="total">
+           Total de Libros: 0 
+        </p>
+    </td>
+        
+        <td  style="width: 30%;">
+            
+            <p>
+                <label for="vtitulo">Antiguo Titulo:</label>
+                <input id="vtitulo" type="text" name="vtitulo"/>
+                
+            </p>
+            <hr>
+            <p>
+                <label for="ntitulo">Nuevo Titulo:</label>
+                <input id="ntitulo" type="text" name="ntitulo"/>
+                
+            </p>
+            <p>
+                <label for="ngenero">Nuevo Genero:</label>
+                <input id="ngenero" type="text" name="ngenero"/>
+                
+            </p>
+            <p>
+                <label for="nautor">Nuevo Autor:</label>
+                <input id="nautor" type="text" name="nautor"/>
+                
+            </p>
+            <img id="lap" src="lapiz.png" style="width: 12%;" >
+        </td>       
+        
+    </tr>
+    
+</table>
+
+<hr>
+            
+
+    <br>
+
+
+<h3> LISTA DE LIBROS</h3>
+
+<table id='tablaLibros'  style=" width:70%; border: 1px solid black ; border-collapse: collapse; margin-top: 0%;">
+    <thead>
+    <tr id="cabecera" style="text-align: center;">
+        <td>Titulo</td><td>Genero</td><td>Autor</td><td>Leido</td><td>Fecha</td><td>Accion</td>
+    </tr>
+    </thead>
+    <tbody id="cuerpo"></tbody>
+
+</table>
+</center>
+<script src="bookList.js" type="module"></script>
+</body>
+</html>
